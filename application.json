@@ -35,6 +35,10 @@
     {
       "id": "NewPage",
       "isDefault": false
+    },
+    {
+      "id": "Solo en 2",
+      "isDefault": false
     }
   ],
   "viewMode": false,
