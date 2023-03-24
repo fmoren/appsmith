@@ -33,7 +33,11 @@
       "isDefault": false
     },
     {
-      "id": "NewPage",
+      "id": "NewPage1",
+      "isDefault": false
+    },
+    {
+      "id": "Solo en 1",
       "isDefault": false
     }
   ],

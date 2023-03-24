@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "DeleteQuery",
+    "name": "InsertQuery",
     "datasource": {
       "name": "Internal",
       "pluginId": "mongo-plugin",
@@ -13,11 +13,10 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "NewPage",
+    "pageId": "NewPage1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "template_table/{{data_table.selectedRow._ref}}",
       "encodeParamsToggle": true,
       "formData": {
         "collection": {
@@ -26,20 +25,21 @@
           "componentData": "newPage"
         },
         "command": {
-          "data": "DELETE",
+          "data": "INSERT",
           "viewType": "component",
-          "componentData": "DELETE"
+          "componentData": "INSERT"
         },
-        "delete": {
-          "query": {
-            "data": "{ _id: ObjectId('{{data_table.triggeredRow._id}}') }",
+        "insert": {
+          "documents": {
+            "data": "{{insert_form.formData}}",
             "viewType": "component",
-            "componentData": "{ _id: ObjectId('{{data_table.triggeredRow._id}}') }"
-          },
-          "limit": {
-            "data": "SINGLE",
-            "viewType": "component",
-            "componentData": "SINGLE"
+            "componentData": "{\n \"_class\": {{insert_col_input1.text}}, \n \"applicationId\": {{insert_col_input2.text}}, \n \"createdAt\": {{insert_col_input3.text}}, \n \"defaultResources\": {{insert_col_input4.text}}\n}"
+          }
+        },
+        "misc": {
+          "formToNativeQuery": {
+            "data": "{\n  \"insert\": \"newPage\",\n  \"documents\": {{insert_form.formData}}\n}\n",
+            "status": "SUCCESS"
           }
         },
         "smartSubstitution": {
@@ -54,15 +54,18 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "data_table.selectedRow._ref",
-      "data_table.triggeredRow._id"
+      "insert_col_input1.text",
+      "insert_col_input2.text",
+      "insert_col_input3.text",
+      "insert_col_input4.text",
+      "insert_form.formData"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "NewPage_DeleteQuery",
+  "id": "NewPage1_InsertQuery",
   "deleted": false,
-  "gitSyncId": "63e2c4fd394af46b0415d529_641de0ecedbcbc3e80bd9c6f"
+  "gitSyncId": "63e2c4fd394af46b0415d529_641de0ecedbcbc3e80bd9c6e"
 }
