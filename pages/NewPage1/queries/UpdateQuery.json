@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "NewPage",
+    "pageId": "NewPage1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -127,7 +127,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "NewPage_UpdateQuery",
+  "id": "NewPage1_UpdateQuery",
   "deleted": false,
   "gitSyncId": "63e2c4fd394af46b0415d529_641de0ecedbcbc3e80bd9c6c"
 }

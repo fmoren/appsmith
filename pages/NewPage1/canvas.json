@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "NewPage",
-    "slug": "newpage",
+    "name": "NewPage1",
+    "slug": "newpage1",
     "layouts": [
       {
         "viewMode": false,
@@ -1206,7 +1206,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "NewPage_FindQuery",
+              "id": "NewPage1_FindQuery",
               "name": "FindQuery",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -1228,14 +1228,15 @@
           "data_table"
         ],
         "validOnPageLoadActions": true,
-        "id": "NewPage",
+        "id": "NewPage1",
         "deleted": false,
         "policies": [],
         "userPermissions": []
       }
     ],
     "userPermissions": [],
-    "policies": []
+    "policies": [],
+    "isHidden": false
   },
   "deleted": false,
   "gitSyncId": "63e2c4fd394af46b0415d529_641de0ebedbcbc3e80bd9c6a"

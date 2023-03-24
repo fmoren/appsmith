@@ -31,193 +31,11 @@
                 "__root_schema__": {
                   "children": {
                     "policies": {
-                      "children": {
-                        "__array_item__": {
-                          "children": {
-                            "groups": {
-                              "children": {},
-                              "dataType": "array",
-                              "fieldType": "Multiselect",
-                              "sourceData": [],
-                              "isCustomField": false,
-                              "accessor": "groups",
-                              "identifier": "groups",
-                              "position": 0,
-                              "originalIdentifier": "groups",
-                              "boxShadow": "none",
-                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                              "isDisabled": false,
-                              "isFilterable": false,
-                              "isRequired": false,
-                              "isVisible": true,
-                              "label": "Groups",
-                              "labelTextSize": "0.875rem",
-                              "serverSideFiltering": false,
-                              "options": [
-                                {
-                                  "label": "Blue",
-                                  "value": "BLUE"
-                                },
-                                {
-                                  "label": "Green",
-                                  "value": "GREEN"
-                                },
-                                {
-                                  "label": "Red",
-                                  "value": "RED"
-                                }
-                              ]
-                            },
-                            "permissionGroups": {
-                              "children": {},
-                              "dataType": "array",
-                              "fieldType": "Multiselect",
-                              "sourceData": [
-                                "641d9a36edbcbc3e80bd9bf3"
-                              ],
-                              "isCustomField": false,
-                              "accessor": "permissionGroups",
-                              "identifier": "permissionGroups",
-                              "position": 1,
-                              "originalIdentifier": "permissionGroups",
-                              "boxShadow": "none",
-                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                              "isDisabled": false,
-                              "isFilterable": false,
-                              "isRequired": false,
-                              "isVisible": true,
-                              "label": "Permission Groups",
-                              "labelTextSize": "0.875rem",
-                              "serverSideFiltering": false,
-                              "options": [
-                                {
-                                  "label": "Blue",
-                                  "value": "BLUE"
-                                },
-                                {
-                                  "label": "Green",
-                                  "value": "GREEN"
-                                },
-                                {
-                                  "label": "Red",
-                                  "value": "RED"
-                                }
-                              ]
-                            },
-                            "permission": {
-                              "children": {},
-                              "dataType": "string",
-                              "fieldType": "Text Input",
-                              "sourceData": "read:users",
-                              "isCustomField": false,
-                              "accessor": "permission",
-                              "identifier": "permission",
-                              "position": 2,
-                              "originalIdentifier": "permission",
-                              "boxShadow": "none",
-                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                              "iconAlign": "left",
-                              "isDisabled": false,
-                              "isRequired": false,
-                              "isSpellCheck": false,
-                              "isVisible": true,
-                              "labelTextSize": "0.875rem",
-                              "label": "Permission"
-                            },
-                            "users": {
-                              "children": {},
-                              "dataType": "array",
-                              "fieldType": "Multiselect",
-                              "sourceData": [],
-                              "isCustomField": false,
-                              "accessor": "users",
-                              "identifier": "users",
-                              "position": 3,
-                              "originalIdentifier": "users",
-                              "boxShadow": "none",
-                              "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                              "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                              "isDisabled": false,
-                              "isFilterable": false,
-                              "isRequired": false,
-                              "isVisible": true,
-                              "label": "Users",
-                              "labelTextSize": "0.875rem",
-                              "serverSideFiltering": false,
-                              "options": [
-                                {
-                                  "label": "Blue",
-                                  "value": "BLUE"
-                                },
-                                {
-                                  "label": "Green",
-                                  "value": "GREEN"
-                                },
-                                {
-                                  "label": "Red",
-                                  "value": "RED"
-                                }
-                              ]
-                            }
-                          },
-                          "dataType": "object",
-                          "fieldType": "Object",
-                          "sourceData": {
-                            "groups": [],
-                            "permissionGroups": [
-                              "641d9a36edbcbc3e80bd9bf3"
-                            ],
-                            "permission": "read:users",
-                            "users": []
-                          },
-                          "isCustomField": false,
-                          "accessor": "__array_item__",
-                          "identifier": "__array_item__",
-                          "position": -1,
-                          "originalIdentifier": "__array_item__",
-                          "boxShadow": "none",
-                          "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                          "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                          "cellBoxShadow": "none",
-                          "isDisabled": false,
-                          "isRequired": false,
-                          "isVisible": true,
-                          "labelTextSize": "0.875rem",
-                          "label": "Array Item"
-                        }
-                      },
+                      "children": {},
                       "dataType": "array",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.policies))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                      "fieldType": "Array",
-                      "sourceData": [
-                        {
-                          "groups": [],
-                          "permissionGroups": [
-                            "641d9a36edbcbc3e80bd9bf3"
-                          ],
-                          "permission": "manage:users",
-                          "users": []
-                        },
-                        {
-                          "groups": [],
-                          "permissionGroups": [
-                            "641d9a36edbcbc3e80bd9bf3"
-                          ],
-                          "permission": "resetPassword:users",
-                          "users": []
-                        },
-                        {
-                          "groups": [],
-                          "permissionGroups": [
-                            "641d9a36edbcbc3e80bd9bf3"
-                          ],
-                          "permission": "read:users",
-                          "users": []
-                        }
-                      ],
+                      "fieldType": "Multiselect",
+                      "sourceData": [],
                       "isCustomField": false,
                       "accessor": "policies",
                       "identifier": "policies",
@@ -226,15 +44,27 @@
                       "boxShadow": "none",
                       "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                      "cellBorderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                      "cellBoxShadow": "none",
-                      "backgroundColor": "#FAFAFA",
-                      "isCollapsible": true,
                       "isDisabled": false,
+                      "isFilterable": false,
                       "isRequired": false,
                       "isVisible": true,
+                      "label": "Policies",
                       "labelTextSize": "0.875rem",
-                      "label": "Policies"
+                      "serverSideFiltering": false,
+                      "options": [
+                        {
+                          "label": "Blue",
+                          "value": "BLUE"
+                        },
+                        {
+                          "label": "Green",
+                          "value": "GREEN"
+                        },
+                        {
+                          "label": "Red",
+                          "value": "RED"
+                        }
+                      ]
                     },
                     "source": {
                       "children": {},
@@ -283,7 +113,7 @@
                       "dataType": "boolean",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.isAnonymous))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Switch",
-                      "sourceData": false,
+                      "sourceData": true,
                       "isCustomField": false,
                       "accessor": "isAnonymous",
                       "identifier": "isAnonymous",
@@ -437,7 +267,7 @@
                       "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.email))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": "franciscomorensanz@gmail.com",
+                      "sourceData": "anonymousUser",
                       "isCustomField": false,
                       "accessor": "email",
                       "identifier": "email",
@@ -454,44 +284,17 @@
                       "labelTextSize": "0.875rem",
                       "label": "Email"
                     },
-                    "createdAt": {
+                    "currentWorkspaceId": {
                       "children": {},
                       "dataType": "string",
-                      "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.createdAt, \"YYYY-MM-DDTHH:mm:ss.sssZ\").format(\"YYYY-MM-DDTHH:mm:ss.sssZ\")))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                      "fieldType": "Datepicker",
-                      "sourceData": "2023-03-24T12:40:22.394Z",
-                      "isCustomField": false,
-                      "accessor": "createdAt",
-                      "identifier": "createdAt",
-                      "position": 11,
-                      "originalIdentifier": "createdAt",
-                      "boxShadow": "none",
-                      "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                      "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                      "closeOnSelection": false,
-                      "convertToISO": false,
-                      "dateFormat": "YYYY-MM-DDTHH:mm:ss.sssZ",
-                      "isDisabled": false,
-                      "isRequired": false,
-                      "isVisible": true,
-                      "label": "Created At",
-                      "maxDate": "2121-12-31T18:29:00.000Z",
-                      "minDate": "1920-12-31T18:30:00.000Z",
-                      "shortcuts": false,
-                      "timePrecision": "minute",
-                      "labelTextSize": "0.875rem"
-                    },
-                    "password": {
-                      "children": {},
-                      "dataType": "string",
-                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.password))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.currentWorkspaceId))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "fieldType": "Text Input",
-                      "sourceData": "$2a$10$6/px7oHSC0mUjzmOU/JrU.aQr2PlUMOAY32FNtYE2mm.eh2ot4HX6",
+                      "sourceData": "",
                       "isCustomField": false,
-                      "accessor": "password",
-                      "identifier": "password",
-                      "position": 12,
-                      "originalIdentifier": "password",
+                      "accessor": "currentWorkspaceId",
+                      "identifier": "currentWorkspaceId",
+                      "position": 10,
+                      "originalIdentifier": "currentWorkspaceId",
                       "boxShadow": "none",
                       "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -501,78 +304,84 @@
                       "isSpellCheck": false,
                       "isVisible": true,
                       "labelTextSize": "0.875rem",
-                      "label": "Password"
+                      "label": "Current Workspace Id"
                     },
-                    "updatedAt": {
+                    "workspaceIds": {
                       "children": {},
-                      "dataType": "string",
-                      "defaultValue": "{{((sourceData, formData, fieldState) => (moment(sourceData.updatedAt, \"YYYY-MM-DDTHH:mm:ss.sssZ\").format(\"YYYY-MM-DDTHH:mm:ss.sssZ\")))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                      "fieldType": "Datepicker",
-                      "sourceData": "2023-03-24T12:40:22.547Z",
+                      "dataType": "array",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.workspaceIds))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "fieldType": "Multiselect",
+                      "sourceData": [],
                       "isCustomField": false,
-                      "accessor": "updatedAt",
-                      "identifier": "updatedAt",
-                      "position": 13,
-                      "originalIdentifier": "updatedAt",
+                      "accessor": "workspaceIds",
+                      "identifier": "workspaceIds",
+                      "position": 11,
+                      "originalIdentifier": "workspaceIds",
                       "boxShadow": "none",
                       "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                       "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-                      "closeOnSelection": false,
-                      "convertToISO": false,
-                      "dateFormat": "YYYY-MM-DDTHH:mm:ss.sssZ",
                       "isDisabled": false,
+                      "isFilterable": false,
                       "isRequired": false,
                       "isVisible": true,
-                      "label": "Updated At",
-                      "maxDate": "2121-12-31T18:29:00.000Z",
-                      "minDate": "1920-12-31T18:30:00.000Z",
-                      "shortcuts": false,
-                      "timePrecision": "minute",
-                      "labelTextSize": "0.875rem"
+                      "label": "Workspace Ids",
+                      "labelTextSize": "0.875rem",
+                      "serverSideFiltering": false,
+                      "options": [
+                        {
+                          "label": "Blue",
+                          "value": "BLUE"
+                        },
+                        {
+                          "label": "Green",
+                          "value": "GREEN"
+                        },
+                        {
+                          "label": "Red",
+                          "value": "RED"
+                        }
+                      ]
+                    },
+                    "name": {
+                      "children": {},
+                      "dataType": "string",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.name))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "fieldType": "Text Input",
+                      "sourceData": "anonymousUser",
+                      "isCustomField": false,
+                      "accessor": "name",
+                      "identifier": "name",
+                      "position": 12,
+                      "originalIdentifier": "name",
+                      "boxShadow": "none",
+                      "borderRadius": "{{((sourceData, formData, fieldState) => (appsmith.theme.borderRadius.appBorderRadius))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "accentColor": "{{((sourceData, formData, fieldState) => (appsmith.theme.colors.primaryColor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                      "iconAlign": "left",
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isSpellCheck": false,
+                      "isVisible": true,
+                      "labelTextSize": "0.875rem",
+                      "label": "Name"
                     }
                   },
                   "dataType": "object",
                   "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                   "fieldType": "Object",
                   "sourceData": {
-                    "email": "franciscomorensanz@gmail.com",
-                    "password": "$2a$10$6/px7oHSC0mUjzmOU/JrU.aQr2PlUMOAY32FNtYE2mm.eh2ot4HX6",
+                    "name": "anonymousUser",
+                    "email": "anonymousUser",
                     "passwordResetInitiated": false,
                     "source": "FORM",
                     "isEnabled": true,
+                    "currentWorkspaceId": "",
+                    "workspaceIds": [],
                     "groupIds": [],
                     "permissions": [],
-                    "isAnonymous": false,
+                    "isAnonymous": true,
                     "tenantId": "63e2c1d2394af46b0415d4f3",
-                    "createdAt": "2023-03-24T12:40:22Z",
-                    "updatedAt": "2023-03-24T12:40:22Z",
                     "deleted": false,
-                    "policies": [
-                      {
-                        "permission": "manage:users",
-                        "users": [],
-                        "groups": [],
-                        "permissionGroups": [
-                          "641d9a36edbcbc3e80bd9bf3"
-                        ]
-                      },
-                      {
-                        "permission": "resetPassword:users",
-                        "users": [],
-                        "groups": [],
-                        "permissionGroups": [
-                          "641d9a36edbcbc3e80bd9bf3"
-                        ]
-                      },
-                      {
-                        "permission": "read:users",
-                        "users": [],
-                        "groups": [],
-                        "permissionGroups": [
-                          "641d9a36edbcbc3e80bd9bf3"
-                        ]
-                      }
-                    ],
+                    "policies": [],
                     "userPermissions": []
                   },
                   "isCustomField": false,
@@ -778,64 +587,31 @@
                   "key": "schema.__root_schema__.children.email.accentColor"
                 },
                 {
-                  "key": "schema.__root_schema__.children.policies.children.__array_item__.children.groups.borderRadius"
+                  "key": "schema.__root_schema__.children.currentWorkspaceId.defaultValue"
                 },
                 {
-                  "key": "schema.__root_schema__.children.policies.children.__array_item__.children.groups.accentColor"
+                  "key": "schema.__root_schema__.children.currentWorkspaceId.borderRadius"
                 },
                 {
-                  "key": "schema.__root_schema__.children.policies.children.__array_item__.children.permissionGroups.borderRadius"
+                  "key": "schema.__root_schema__.children.currentWorkspaceId.accentColor"
                 },
                 {
-                  "key": "schema.__root_schema__.children.policies.children.__array_item__.children.permissionGroups.accentColor"
+                  "key": "schema.__root_schema__.children.workspaceIds.defaultValue"
                 },
                 {
-                  "key": "schema.__root_schema__.children.policies.children.__array_item__.children.permission.borderRadius"
+                  "key": "schema.__root_schema__.children.workspaceIds.borderRadius"
                 },
                 {
-                  "key": "schema.__root_schema__.children.policies.children.__array_item__.children.permission.accentColor"
+                  "key": "schema.__root_schema__.children.workspaceIds.accentColor"
                 },
                 {
-                  "key": "schema.__root_schema__.children.policies.children.__array_item__.children.users.borderRadius"
+                  "key": "schema.__root_schema__.children.name.defaultValue"
                 },
                 {
-                  "key": "schema.__root_schema__.children.policies.children.__array_item__.children.users.accentColor"
+                  "key": "schema.__root_schema__.children.name.borderRadius"
                 },
                 {
-                  "key": "schema.__root_schema__.children.policies.children.__array_item__.borderRadius"
-                },
-                {
-                  "key": "schema.__root_schema__.children.policies.children.__array_item__.cellBorderRadius"
-                },
-                {
-                  "key": "schema.__root_schema__.children.policies.cellBorderRadius"
-                },
-                {
-                  "key": "schema.__root_schema__.children.createdAt.defaultValue"
-                },
-                {
-                  "key": "schema.__root_schema__.children.createdAt.borderRadius"
-                },
-                {
-                  "key": "schema.__root_schema__.children.createdAt.accentColor"
-                },
-                {
-                  "key": "schema.__root_schema__.children.password.defaultValue"
-                },
-                {
-                  "key": "schema.__root_schema__.children.password.borderRadius"
-                },
-                {
-                  "key": "schema.__root_schema__.children.password.accentColor"
-                },
-                {
-                  "key": "schema.__root_schema__.children.updatedAt.defaultValue"
-                },
-                {
-                  "key": "schema.__root_schema__.children.updatedAt.borderRadius"
-                },
-                {
-                  "key": "schema.__root_schema__.children.updatedAt.accentColor"
+                  "key": "schema.__root_schema__.children.name.accentColor"
                 }
               ],
               "borderWidth": "0",
